@@ -1,0 +1,214 @@
+General Styles
+.pd-section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;  font-family: "Playfair Display", serif;
+
+  }
+  
+  #abc{  font-family: "Playfair Display", serif;
+  }
+  /* Product Grid */
+  .pd-product-grid {
+    display: flex;  font-family: "Playfair Display", serif;
+
+    flex-wrap: wrap;
+    gap: 15px; /* Space between products */
+    justify-content: flex-start; /* Align products to the start */
+    margin: 0 -7.5px; /* Compensate for the gap on the sides */
+  }
+  
+  .pd-product-card-wrapper {
+    flex: 0 0 calc(25% - 15px); /* 4 products per row (25% width minus gap) */
+    max-width: calc(25% - 15px); /* Ensure the width does not exceed 25% minus gap */
+    margin-bottom: 20px; /* Space between rows */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    padding: 0 7.5px; /* Add padding to compensate for the gap */
+
+  }
+  
+  .pd-product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .pd-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Product Image Wrapper */
+  .pd-product-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    padding: 15px; /* Add some padding around the image */
+  }
+  
+  /* Product Image */
+  .pd-product-image {
+    width: 100%; /* Set image width to 75% */
+    height: 200px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+  }
+  
+  .pd-product-img-wrapper:hover .pd-product-image {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  /* Card Body */
+  .pd-card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .pd-product-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  font-family: "Playfair Display", serif;
+    margin-bottom: 10px;
+  }
+  
+  .pd-product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+  /* font-family: "Playfair Display", serif; */
+    color: #f40e0e;
+    margin-bottom: 15px;
+  }
+  
+  /* Product Icons */
+  .pd-product-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Space between icons */
+  font-family: "Playfair Display", serif;
+    margin-top: 10px;
+  }
+  
+  .pd-icon {
+    cursor: pointer;
+    color: #000; /* Black icons */
+  font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .pd-icon:hover {
+    color: #5d6063; /* Change color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .pd-product-card-wrapper {
+      flex: 0 0 calc(33.33% - 15px); /* 3 products per row on medium screens */
+      max-width: calc(33.33% - 15px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pd-product-card-wrapper {
+      flex: 0 0 calc(50% - 15px); /* 2 products per row on small screens */
+      max-width: calc(50% - 15px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .pd-product-card-wrapper {
+      flex: 0 0 100%; /* 1 product per row on extra small screens */
+      max-width: 100%;
+    }
+  }
+
+  /* Best Seller Slider */
+.best-seller-slider {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.best-seller-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.best-seller-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.best-seller-card {
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 0 10px;
+}
+
+.best-seller-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.best-seller-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.best-seller-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.best-seller-details {
+  text-align: center;
+}
+
+.best-seller-product-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.best-seller-product-price {
+  font-size: 16px;
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.best-seller-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.best-seller-icon {
+  font-size: 20px;
+  color: #2c2c2c;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.best-seller-icon:hover {
+  color: #e63946;
+}

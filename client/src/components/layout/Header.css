@@ -1,0 +1,237 @@
+/* .header-container {
+    background: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    background: #ddd;
+}
+
+.nav-item.active {
+    background: #ff9900;
+    color: white;
+}
+
+
+.liked-icon {
+    color: red;
+    font-size: 20px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.search-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-icon:hover {
+    transform: scale(1.2);
+}
+
+.liked-icon {
+    color: red;
+    font-size: 20px;
+} */
+
+
+
+
+.header-container {
+    background: #fff;
+    /* background-color:#4f4644; */
+    
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    background-color:#4e342e;
+
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* On Hover */
+.nav-item:hover {
+    color: #573d17;  /* Orange color on hover */
+}
+
+/* Active Nav Item (Clicked State) */
+.nav-item.active {
+    color: #0e0d0d;  /* Darker orange when active */
+}
+
+/* Liked Products Badge */
+.liked-icon {
+    color: red;
+    font-size: 20px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-icon:hover {
+    transform: scale(1.2);
+}
+
+.liked-icon {
+    color: red;
+    font-size: 20px;
+}
+
+
+.logo{
+    
+    width: 80px;
+    height:  60px;
+    z-index: 2;
+    transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+  }
+
+  /* Dropdown Styling */
+.dropdown-menu {
+    background-color: #fffcf2 !important; /* Matches .header-container */
+    border: none !important;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow like header */
+    min-width: 160px;
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+    color: #333 !important;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+    border-radius: 8px;
+}
+
+/* Hover effect */
+.dropdown-item:hover {
+    background-color: #f5f5f5; /* Subtle hover */
+    color: #573d17 !important;
+}
+
+/* Active (clicked) style */
+.dropdown-item:active {
+    background-color: #e6d8c3 !important;
+    color: #573d17 !important;
+}

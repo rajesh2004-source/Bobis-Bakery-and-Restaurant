@@ -1,0 +1,96 @@
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdf6e3;
+    padding: 50px 100px;
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+  }
+  
+  /* Left side text content */
+  .banner-content {
+    max-width: 450px;
+    padding-left: 40px;
+  }
+  
+  .discount {
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+    margin-left: 100px; font-family: 'Playfair Display', serif;
+  }
+  
+  .banner-content h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #343cab;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .banner-content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .shop-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f67575;
+    color: white;
+    margin-left: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+  }
+  
+  .shop-button:hover {
+    background-color: #e63946;
+  }
+  
+  /* Banner Image Section */
+  .banner-images {
+    position: relative;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-images .main-image {
+    width: 550px;
+    height: 380px;
+    position: relative;
+    animation: floatUpDown 3s ease-in-out infinite;
+    margin-right: 300px;
+  }
+  
+  /* Floating bakery items */
+  .banner-images .floating {
+    position: absolute;
+    width: 110px;
+    height: auto;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Adjusted positions */
+  .product1 { top: -1%; left: -760px; width: 90px; }
+  .product2 { bottom: 10%; right: 20px; width: 70px; }
+  .product3 { top: 10%; right: 0px; width: 70px; }
+  .product4 { bottom: 0%; left: 120px; width: 70px; }
+  .product5 { bottom: 0%; left:  -760px; width: 80px; }
+  
+  /* Floating Animation */
+  @keyframes floatUpDown {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  

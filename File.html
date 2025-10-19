@@ -1,0 +1,302 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>MongoDB Schema Documentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+        th { background-color: #3498db; color: white; text-align: left; }
+        td, th { border: 1px solid #ddd; padding: 8px; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>MongoDB Schema Documentation</h1>
+
+    <h2>1. Category Schema</h2>
+    <table>
+        <tr><th>Field</th><th>Type</th><th>Description</th><th>Constraints</th></tr>
+        <tr><td>_id</td><td>ObjectId</td><td>Auto-generated document ID</td><td>-</td></tr>
+        <tr><td>name</td><td>String</td><td>Category name</td><td>required:true</td></tr>
+        <tr><td>slug</td><td>String</td><td>URL-friendly version</td><td>lowercase:true</td></tr>
+    </table>
+    <p><strong>Model Name:</strong> 'category'</p>
+
+    <h2>2. Product Schema</h2>
+    <table>
+        <tr><th>Field</th><th>Type</th><th>Description</th><th>Constraints</th></tr>
+        <tr><td>_id</td><td>ObjectId</td><td>Auto-generated ID</td><td>-</td></tr>
+        <tr><td>name</td><td>String</td><td>Product name</td><td>required:true</td></tr>
+        <tr><td>slug</td><td>String</td><td>URL-friendly version</td><td>required:true</td></tr>
+        <tr><td>description</td><td>String</td><td>Product details</td><td>required:true</td></tr>
+        <tr><td>price</td><td>Number</td><td>Product price</td><td>min:0, required</td></tr>
+        <tr><td>category</td><td>ObjectId</td><td>Reference to Category</td><td>required:true</td></tr>
+        <tr><td>quantity</td><td>Number</td><td>Available stock</td><td>required:true</td></tr>
+        <tr><td>photo.data</td><td>Buffer</td><td>Image binary data</td><td>required:true</td></tr>
+        <tr><td>photo.contentType</td><td>String</td><td>Image MIME type</td><td>required:true</td></tr>
+        <tr><td>shipping</td><td>Boolean</td><td>Shipping availability</td><td>-</td></tr>
+    </table>
+    <p><strong>Model Name:</strong> 'products'</p>
+
+    <h2>3. User Schema</h2>
+    <table>
+        <tr><th>Field</th><th>Type</th><th>Description</th><th>Constraints</th></tr>
+        <tr><td>_id</td><td>ObjectId</td><td>Auto-generated ID</td><td>-</td></tr>
+        <tr><td>name</td><td>String</td><td>User's full name</td><td>required:true, trim:true</td></tr>
+        <tr><td>email</td><td>String</td><td>User's email</td><td>required:true, unique:true</td></tr>
+        <tr><td>password</td><td>String</td><td>Hashed password</td><td>required:true</td></tr>
+        <tr><td>phone</td><td>String</td><td>Contact number</td><td>required:true</td></tr>
+        <tr><td>address</td><td>String</td><td>Shipping address</td><td>required:true</td></tr>
+        <tr><td>question</td><td>String</td><td>Security question</td><td>required:true</td></tr>
+        <tr><td>role</td><td>Number</td><td>User role (0=regular)</td><td>default:0</td></tr>
+    </table>
+    <p><strong>Model Name:</strong> 'eapp'</p>
+
+    <h2>4. Order Schema</h2>
+    <table>
+        <tr><th>Field</th><th>Type</th><th>Description</th><th>Constraints</th></tr>
+        <tr><td>_id</td><td>ObjectId</td><td>Auto-generated ID</td><td>-</td></tr>
+        <tr><td>products</td><td>ObjectId[]</td><td>Product references</td><td>ref:'products'</td></tr>
+        <tr><td>payment</td><td>Object</td><td>Payment details</td><td>required:true</td></tr>
+        <tr><td>buyer</td><td>ObjectId</td><td>User reference</td><td>ref:'eapp'</td></tr>
+        <tr><td>status</td><td>String</td><td>Order status</td><td>enum:["Not Process","Processing","Shipped","Deliverd","Cancle"], default:"Not Process"</td></tr>
+    </table>
+    <p><strong>Model Name:</strong> 'Order'</p>
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .logo {
+      /* background-color: #4c2f29; */
+      width: 600px;
+      height: 250px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo img {
+      max-height: 100px;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    table {
+      width: 60%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+    th {
+      background-color: #4c2f29;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="GreenMarketingLogo.png"/>
+  </div>
+  <h2>Bobi's Bakery - Login Summary</h2>
+  <table>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>NAME</td>
+      <td>Tushar</td>
+    </tr>
+    <tr>
+      <td>PASSWORD</td>
+      <td>123456</td>
+    </tr>
+  </table>
+</body>
+</html> -->
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .logo {
+      /* background-color: #4c2f29; */
+      width: 600px;
+      height: 250px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo img {
+      max-height: 100px;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    table {
+      width: 60%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+    th {
+      background-color: #4c2f29;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="GreenMarketingLogo.png"/>
+  </div>
+  <h2>Bobi's Bakery - Forgot Password Summary</h2>
+  <table>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>NAME</td>
+      <td>Tushar</td>
+    </tr>
+    <tr>
+      <td>QUESTION</td>
+      <td>football</td>
+    </tr>
+    <tr>
+      <td>PASSWORD</td>
+      <td>123456</td>
+    </tr>
+  </table>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Report - Bobi's Bakery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #fff;
+    }
+    .logo {
+      /* background-color: #4c2f29; */
+      width: 440px;
+      height: 160px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo img {
+      max-height: 100px;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #4c2f29;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .status-success {
+      color: green;
+      font-weight: bold;
+    }
+    .status-failed {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="GreenMarketingLogo.png" alt="logo" />
+  </div>
+
+  <h2>Bobi's Bakery - Payment Report</h2>
+
+  <table>
+    <tr>
+      <th>Field</th>
+      <th>Details</th>
+    </tr>
+    <tr>
+      <td>User Name</td>
+      <td>Tushar</td>
+    </tr>
+    <tr>
+      <td>Amount</td>
+      <td>₹450</td>
+    </tr>
+    <tr>
+      <td>Product Name</td>
+      <td>Chocolate Cake</td>
+    </tr>
+    <tr>
+      <td>Quantity</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Payment Mode</td>
+      <td>Online (UPI)</td>
+    </tr>
+    <tr>
+      <td>Payment Status</td>
+      <td class="status-success">Success</td>
+    </tr>
+  </table>
+
+</body>
+</html>

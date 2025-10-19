@@ -1,0 +1,143 @@
+/* Footer General Styles */
+.footer {
+  background-color: #2a3962; /* ✅ Exact Background Color */
+  color: white;
+  font-family: "Playfair Display", serif; /* Matching font */
+  padding: 20px 10px; /* Reduced padding */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the footer content */
+}
+
+/* Top Features */
+.footer-top {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Reduced gap */
+  padding-bottom: 20px; /* Reduced padding */
+  border-bottom: 2px solid #354773;
+  width: 100%; /* Ensure it spans the full width */
+  max-width: 1000px; /* Reduced max-width */
+}
+
+.feature {
+  text-align: center;
+  margin-left: 50px; /* Reduced margin */
+  margin-right: 50px; /* Reduced margin */
+}
+
+.feature-icon {
+  background-color: #ff6f61;
+  width: 50px; /* Reduced size */
+  height: 50px; /* Reduced size */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 18px; /* Reduced font size */
+  color: white;
+}
+
+.feature h3 {
+  font-size: 19px; /* Reduced font size */
+  margin: 8px 0 4px; /* Reduced margin */
+  font-family: "Playfair Display", serif; /* Matching font */
+}
+
+.feature p {
+  font-size: 16px; /* Reduced font size */
+  color: #ccc;
+  font-family: "Playfair Display", serif; /* Matching font */
+}
+
+/* Bottom Footer Sections */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px; /* Reduced padding */
+  width: 100%; /* Ensure it spans the full width */
+  max-width: 1000px; /* Reduced max-width */
+}
+
+.footer-section {
+  width: 22%;
+  text-align: left;
+}
+
+.footer-section h3 {
+  font-size: 19px; /* Reduced font size */
+  margin-bottom: 2px; /* Reduced margin */
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif; /* Matching font */
+}
+
+.footer-section p, .footer-section ul {
+  font-size: 14px; /* Reduced font size */
+  line-height: 1.6; /* Reduced line height */
+  color: #ccc;
+}
+
+.footer-section ul {
+  list-style: none;
+  margin-bottom: 8px; /* Reduced margin */
+  padding: 0;
+}
+
+.footer-section a {
+  color: white;
+  margin-bottom: 2px;
+  text-decoration: none;
+  /* font-family: "Playfair Display", serif; Matching font */
+}
+
+.footer-section a:hover {
+  color: #ff6f61;
+}
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  gap: 8px; /* Reduced gap */
+}
+
+.newsletter input {
+  flex: 1;
+  color: #2a3962;
+  padding: 6px; /* Reduced padding */
+  border-radius: 5px;
+  border: none;
+  font-family: "Playfair Display", serif; /* Matching font */
+  font-size: 12px; /* Reduced font size */
+}
+
+.newsletter button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 6px 12px; /* Reduced padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif; /* Matching font */
+  font-size: 12px; /* Reduced font size */
+}
+
+.newsletter button:hover {
+  background-color: #e65c50;
+}
+
+/* Footer Copy */
+.footer-copy {
+  text-align: center;
+  margin-top: 15px; /* Reduced margin */
+  border-top: 1px solid #354773;
+  padding-top: 10px; /* Reduced padding */
+  color: #ccc;
+  align-items: center;
+  font-family: "Playfair Display", serif; /* Matching font */
+  width: 100%; /* Ensure it spans the full width */
+  max-width: 1000px; /* Reduced max-width */
+  font-size: 17px; /* Reduced font size */
+}
+
