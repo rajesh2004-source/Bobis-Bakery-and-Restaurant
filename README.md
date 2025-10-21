@@ -1,5 +1,12 @@
 # Bobi's Bakery & Restaurant 🍰 (MERN Stack E-Commerce Platform)
 
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/3eee7f45-02ae-4ed4-8b32-9b6b4960396d" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/aa8fc9ee-3a91-40ca-b726-52bb1f6f54d4" />
+
+
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/3ba5f5b1-60e9-4ed0-b782-7e74efa05530" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8b8abae1-959d-4a77-8832-601808c49b04" />
+
 
 ## 📖 Overview
 
@@ -89,16 +96,10 @@ The application will typically be accessible at `http://localhost:[Your Client P
 
 -----
 
-## 📜 License
-
-This project is distributed under the **MIT License**. See the **`LICENSE`** file in the repository root for full details.
-
------
-
 ## 📧 Contact
 
 **Mahale Rajesh** - [rajeshmahale103@gmail.com](mailto:rajeshmahale103@gmail.com)
 
-Project Link: [Your GitHub Repository Link]
+Project Link: https://github.com/rajesh2004-source/Bobis-Bakery-and-Restaurant
 
-```
+-----
