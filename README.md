@@ -42,7 +42,7 @@ This application is built using the following technologies:
 
 ---
 
-## Configure Environment Variables (CRITICAL STEP)
+## Configure Environment Variables
 
 Create a file named **`.env`** in the **root directory** (for the server) and a separate **`.env`** file inside the **`client`** directory (for the frontend). **You must provide your own MongoDB connection string and API keys.**
 
@@ -95,11 +95,14 @@ npm start
 The application will typically be accessible at `http://localhost:[Your Client Port, e.g., 3000]`.
 
 -----
+## 📜 License
+This project is distributed under the MIT License. See the LICENSE file in the repository root for full details.
 
+-----
 ## 📧 Contact
 
 **Mahale Rajesh** - [rajeshmahale103@gmail.com](mailto:rajeshmahale103@gmail.com)
 
-Project Link: https://github.com/rajesh2004-source/Bobis-Bakery-and-Restaurant
+**Project Link**: https://github.com/rajesh2004-source/Bobis-Bakery-and-Restaurant
 
 -----
